@@ -21,6 +21,15 @@ app.use("/api/Content",contentRoute);
 app.get("/test",(req,res)=>{
     res.json({msg:"hello your app is running"})
 });
+app.get("/allprd", async function (req, res) {
+    const products = await Product.find({});
+    res.json({
+        message: "all product",
+        status: 200,
+        data: products,
+        success: true,
+    });
+});
 
 
 
