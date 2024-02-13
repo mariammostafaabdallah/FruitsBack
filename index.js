@@ -34,6 +34,6 @@ app.get("/allprd",   async function (req, res) {
 
 
 
-app.listen(5000||process.env.Port,()=>{
+app.listen(5000||process.env.PORT,()=>{
     console.log("server is  running");
 })
