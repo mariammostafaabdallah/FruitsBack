@@ -6,7 +6,7 @@ const contentRoute =require("./routes/contentRoute");
 const Product=require('./models/Product');
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/Shop').then(function(data)
+mongoose.connect('mongodb+srv://mariammostafa72000:jdEhasU8qyqfWsMz@cluster0.gkbrbc1.mongodb.net/Shop').then(function(data)
 {
 console.log("connected")
 }).catch(err=>{
